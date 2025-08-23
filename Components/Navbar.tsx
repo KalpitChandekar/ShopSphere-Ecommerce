@@ -2,7 +2,6 @@
 
 import Link from "next/link";
 import { useEffect, useState } from "react";
-import { Button } from "./ui/button";
 export const Navbar = () => {
   const [mobileOpen, setMobileOpen] = useState<boolean>(false);
 
