@@ -36,7 +36,7 @@ export const ProductCard = ({ product }: Props) => {
           )}
           {price && price.unit_amount && (
             <p className="text-lg font-semibold text-gray-900">
-              ${(price.unit_amount / 100).toFixed(2)}
+              ₹{(price.unit_amount / 100).toFixed(2)}
             </p>
           )}
           <Button className="mt-4 bg-black text-white">View Details</Button>

@@ -45,7 +45,7 @@ export const ProductDetail = ({ product }: Props) => {
         )}
         {price && price.unit_amount && (
           <p className="text-lg font-semibold text-gray-900">
-            ${(price.unit_amount / 100).toFixed(2)}
+            ₹{(price.unit_amount / 100).toFixed(2)}
           </p>
         )}
         <div className="flex items-center space-x-4">
