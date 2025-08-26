@@ -1,10 +1,12 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import { Navbar } from "@/Components/Navbar";
+import { Toaster } from "react-hot-toast";
+import Footer from "@/Components/Footer";
 
 export const metadata: Metadata = {
-  title: "ShopSphere | Ecommerce Website",
-  description: "Modern ecommerce site built with Next.js and Tailwind CSS",
+  title: "ShopSphere | E-commerce Website",
+  description: "Modern e-commerce site built with Next.js and Tailwind CSS",
 };
 
 export default function RootLayout({
@@ -14,11 +16,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className="flex min-h-full flex-col bg-white">
+      <body>
         <Navbar />
-        <main className="flex-grow container mx-auto px-4 py-8">
-          {children}
-        </main>
+        <main>{children}</main>
+        <Toaster />
+        <Footer />
       </body>
     </html>
   );
