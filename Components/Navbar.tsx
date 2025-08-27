@@ -10,6 +10,7 @@ import { useEffect, useState } from "react";
 import { Button } from "./ui/button";
 import { useCartStore } from "@/store/Cart-Store";
 import { usePathname } from "next/navigation";
+import Image from "next/image";
 
 export const Navbar = () => {
   const [mobileOpen, setMobileOpen] = useState<boolean>(false);
@@ -63,9 +64,10 @@ export const Navbar = () => {
           className="flex items-center space-x-2 text-2xl font-bold text-gray-900 hover:text-blue-600 transition-colors duration-200"
           aria-label="ShopSphere Home"
         >
-          <div className="w-8 h-8 bg-gradient-to-br from-blue-600 to-purple-600 rounded-lg flex items-center justify-center">
+          {/* <div className="w-8 h-8 bg-gradient-to-br from-blue-600 to-purple-600 rounded-lg flex items-center justify-center">
             <span className="text-white font-bold text-sm">S</span>
-          </div>
+          </div> */}
+          <Image src="/icon.png" alt="ShopSphere Logo" width={40} height={40} />
           <span className="hidden sm:inline">ShopSphere</span>
         </Link>
 
