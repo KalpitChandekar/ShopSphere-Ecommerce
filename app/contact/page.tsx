@@ -18,7 +18,7 @@ export default function ContactPage() {
   };
 
   return (
-    <div className="max-w-5xl mx-auto flex flex-col items-center justify-center px-6 min-h-screen">
+    <div className="max-w-5xl mx-auto flex flex-col items-center justify-center px-6 min-h-screen md:my-0 my-20">
       {/* Header */}
       <div className="text-center mb-12">
         <h1 className="text-4xl font-bold text-gray-900 mb-4">Contact Us</h1>
